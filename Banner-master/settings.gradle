@@ -1,0 +1,3 @@
+rootProject.name = "Banner-master"
+include ':app'
+include ':lib_banner'
