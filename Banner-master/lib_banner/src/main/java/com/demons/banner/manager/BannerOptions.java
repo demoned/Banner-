@@ -7,17 +7,10 @@ import android.view.View;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.demons.banner.BannerUtils;
+import com.demons.banner.IndicatorOptions;
+import com.demons.banner.annotation.IndicatorOrientation;
 import com.demons.banner.constants.PageStyle;
-import com.zhpan.indicator.enums.IndicatorOrientation;
-import com.zhpan.indicator.option.IndicatorOptions;
 
-/**
- * <pre>
- *   Created by zhpan on 2019/11/20.
- *   Description:BannerViewPager的配置参数
- * </pre>
- */
-@SuppressWarnings("unused")
 public class BannerOptions {
 
   public BannerOptions() {

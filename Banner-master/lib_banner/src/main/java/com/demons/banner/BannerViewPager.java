@@ -12,9 +12,6 @@ import androidx.viewpager.widget.ViewPager;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-/**
- * 继承ViewPager
- */
 public class BannerViewPager extends ViewPager {
 
     private boolean mIsAllowUserScroll = true;

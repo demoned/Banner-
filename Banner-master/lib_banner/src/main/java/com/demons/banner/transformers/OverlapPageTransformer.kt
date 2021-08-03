@@ -4,14 +4,10 @@ import android.os.Build
 import android.view.View
 import androidx.annotation.RequiresApi
 import androidx.viewpager2.widget.ViewPager2
-import com.zhpan.indicator.utils.IndicatorUtils
+import com.demons.banner.BannerUtils
 import kotlin.math.abs
 import kotlin.math.max
 
-/**
- * @param: gives veiwpager2 orientation
- * Source from：https://github.com/KoderLabs/finite-cover-flow/blob/dev/lib/src/main/java/com/saeed/finiteflow/lib/OverlapSliderTransformer.kt
- */
 @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 class OverlapPageTransformer(
   private val orientation: Int,
@@ -52,7 +48,7 @@ class OverlapPageTransformer(
       scaleX = scale
       scaleY = scale
 
-      val dp2px = IndicatorUtils.dp2px((itemGap.toInt() / 2).toFloat())
+      val dp2px = BannerUtils.dp2px((itemGap.toInt() / 2).toFloat())
       when (orientation) {
         ViewPager2.ORIENTATION_HORIZONTAL -> {
           translationX =

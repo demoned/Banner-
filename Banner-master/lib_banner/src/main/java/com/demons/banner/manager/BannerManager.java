@@ -12,12 +12,6 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.demons.banner.transformers.ScaleInTransformer;
 import com.demons.banner.transformers.OverlapPageTransformer;
 
-/**
- * <pre>
- *   Created by zhpan on 2019/11/20.
- *   Description:
- * </pre>
- */
 public class BannerManager {
 
   private BannerOptions mBannerOptions;

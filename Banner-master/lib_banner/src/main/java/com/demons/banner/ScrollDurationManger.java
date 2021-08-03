@@ -16,10 +16,6 @@ import androidx.viewpager2.widget.ViewPager2;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/**
- * @author zhangpan
- * @date 2020/12/21
- */
 public class ScrollDurationManger extends LinearLayoutManager {
   private final LinearLayoutManager mParent;
   private final int scrollDuration;

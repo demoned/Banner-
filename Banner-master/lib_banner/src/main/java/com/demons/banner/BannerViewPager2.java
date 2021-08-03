@@ -32,25 +32,18 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.demons.banner.annotation.AIndicatorGravity;
+import com.demons.banner.annotation.AIndicatorSlideMode;
+import com.demons.banner.annotation.AIndicatorStyle;
 import com.demons.banner.annotation.APageStyle;
 import com.demons.banner.annotation.Visibility;
 import com.demons.banner.constants.PageStyle;
 import com.demons.banner.manager.BannerManager;
 import com.demons.banner.manager.BannerOptions;
-import com.zhpan.indicator.IndicatorView;
-import com.zhpan.indicator.annotation.AIndicatorSlideMode;
-import com.zhpan.indicator.annotation.AIndicatorStyle;
-import com.zhpan.indicator.base.IIndicator;
-import com.zhpan.indicator.option.IndicatorOptions;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by zhpan on 2017/3/28.
- */
-@SuppressWarnings({"unused", "UnusedReturnValue"})
+
 public class BannerViewPager2<T> extends RelativeLayout implements LifecycleObserver {
 
     private int currentPosition;
@@ -660,15 +653,6 @@ public class BannerViewPager2<T> extends RelativeLayout implements LifecycleObse
         return this;
     }
 
-    /**
-     * set indicator circle radius
-     * <p>
-     * if the indicator style is {@link com.zhpan.indicator.enums.IndicatorStyle#DASH}
-     * or {@link com.zhpan.indicator.enums.IndicatorStyle#ROUND_RECT}
-     * the indicator dash width=2*radius
-     *
-     * @param radius 指示器圆点半径
-     */
     public BannerViewPager2<T> setIndicatorSliderRadius(int radius) {
         setIndicatorSliderRadius(radius, radius);
         return this;
@@ -690,23 +674,6 @@ public class BannerViewPager2<T> extends RelativeLayout implements LifecycleObse
         return this;
     }
 
-    /**
-     * Set indicator dash width，if indicator style is {@link com.zhpan.indicator.enums.IndicatorStyle#CIRCLE},
-     * the indicator circle radius is indicatorWidth/2.
-     *
-     * @param normalWidth if the indicator style is {@link com.zhpan.indicator.enums.IndicatorStyle#DASH}
-     *                    the params means unchecked dash width
-     *                    if the indicator style is {@link com.zhpan.indicator.enums.IndicatorStyle#ROUND_RECT}  means
-     *                    unchecked round rectangle width
-     *                    if the indicator style is {@link com.zhpan.indicator.enums.IndicatorStyle#CIRCLE } means
-     *                    unchecked circle diameter
-     * @param checkWidth  if the indicator style is {@link com.zhpan.indicator.enums.IndicatorStyle#DASH}
-     *                    the params means checked dash width
-     *                    if the indicator style is {@link com.zhpan.indicator.enums.IndicatorStyle#ROUND_RECT} the
-     *                    params means checked round rectangle width
-     *                    if the indicator style is {@link com.zhpan.indicator.enums.IndicatorStyle#CIRCLE } means
-     *                    checked circle diameter
-     */
     public BannerViewPager2<T> setIndicatorSliderWidth(int normalWidth, int checkWidth) {
         mBannerManager.getBannerOptions().setIndicatorSliderWidth(normalWidth, checkWidth);
         return this;
@@ -742,13 +709,6 @@ public class BannerViewPager2<T> extends RelativeLayout implements LifecycleObse
         return this;
     }
 
-    /**
-     * Set Indicator slide mode，default value is {@link com.zhpan.indicator.enums.IndicatorSlideMode#NORMAL}
-     *
-     * @param slideMode Indicator slide mode
-     * @see com.zhpan.indicator.enums.IndicatorSlideMode#NORMAL
-     * @see com.zhpan.indicator.enums.IndicatorSlideMode#SMOOTH
-     */
     public BannerViewPager2<T> setIndicatorSlideMode(@AIndicatorSlideMode int slideMode) {
         mBannerManager.getBannerOptions().setIndicatorSlideMode(slideMode);
         return this;
@@ -768,14 +728,6 @@ public class BannerViewPager2<T> extends RelativeLayout implements LifecycleObse
         return this;
     }
 
-    /**
-     * Set indicator style
-     *
-     * @param indicatorStyle indicator style
-     * @see com.zhpan.indicator.enums.IndicatorStyle#CIRCLE
-     * @see com.zhpan.indicator.enums.IndicatorStyle#DASH
-     * @see com.zhpan.indicator.enums.IndicatorStyle#ROUND_RECT
-     */
     public BannerViewPager2<T> setIndicatorStyle(@AIndicatorStyle int indicatorStyle) {
         mBannerManager.getBannerOptions().setIndicatorStyle(indicatorStyle);
         return this;

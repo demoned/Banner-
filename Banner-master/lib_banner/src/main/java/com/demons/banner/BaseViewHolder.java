@@ -18,14 +18,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.demons.banner.annotation.Visibility;
 
-/**
- * <pre>
- *   Created by zhpan on 2020/4/5.
- *   Attention:Don't use {@link RecyclerView.ViewHolder#getAdapterPosition}
- *   method to get position,this method will return a fake position.
- * </pre>
- */
-@SuppressWarnings("unused")
 public class BaseViewHolder<T> extends RecyclerView.ViewHolder {
 
   private final SparseArray<View> mViews = new SparseArray<>();

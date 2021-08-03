@@ -13,12 +13,6 @@ import androidx.annotation.Nullable;
 import com.demons.banner.BannerUtils;
 import com.demons.banner.R;
 
-/**
- * <pre>
- *   Created by zhpan on 2019/11/20.
- *   Description:初始化xml的自定义属性
- * </pre>
- */
 public class AttributeController {
 
   private final BannerOptions mBannerOptions;

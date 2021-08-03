@@ -6,12 +6,6 @@ import android.os.Build;
 import androidx.annotation.RequiresApi;
 import android.view.View;
 
-/**
- * <pre>
- *   Created by zhangpan on 2018/12/26.
- *   Description:为View设置圆角，支持View及ViewGroup，适用Android 5.1及以上系统。
- * </pre>
- */
 public class ViewStyleSetter {
 
   /**

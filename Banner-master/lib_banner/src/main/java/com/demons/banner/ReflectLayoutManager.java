@@ -6,10 +6,6 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import java.lang.reflect.Field;
 
-/**
- * 通过反射修改页面滑动的时间
- * Thanks:https://github.com/zguop/banner/blob/master/pager2banner/src/main/java/com/to/aboomy/pager2banner/Banner.java
- */
 public class ReflectLayoutManager {
 
   public static void reflectLayoutManager(ViewPager2 viewPager2, int scrollDuration) {

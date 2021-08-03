@@ -11,9 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by zhpan on 2017/3/28.
- */
 public abstract class BaseBannerAdapter<T> extends RecyclerView.Adapter<BaseViewHolder<T>> {
   protected List<T> mList = new ArrayList<>();
   private boolean isCanLoop;

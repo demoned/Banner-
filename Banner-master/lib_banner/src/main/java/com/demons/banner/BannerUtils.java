@@ -17,8 +17,10 @@ import androidx.core.view.ViewCompat;
 
 import java.util.List;
 
+import kotlin.jvm.JvmStatic;
+
 /**
- *  XBanner轮播控件的工具类
+ *  轮播控件的工具类
  */
 public class BannerUtils {
 

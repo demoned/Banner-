@@ -7,7 +7,7 @@ import android.util.AttributeSet
 import androidx.annotation.DrawableRes
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.DrawableCompat
-import com.zhpan.indicator.base.BaseIndicatorView
+import com.demons.banner.transformers.BaseIndicatorView
 
 class DrawableIndicator @JvmOverloads constructor(
   context: Context?,
